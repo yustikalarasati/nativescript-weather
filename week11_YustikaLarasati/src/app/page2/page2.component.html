@@ -1,0 +1,13 @@
+<ActionBar title="Detail" class="action-bar">
+</ActionBar>
+
+<ScrollView class="page">
+    <StackLayout>
+        <Label [text]="'Country Code: ' + country.CountryCode"></Label>
+        <Label [text]="'Country Name: ' + country.CountryName"></Label>
+        <Label [text]="'Capital Name: ' + country.CapitalName"></Label>
+        <Label [text]="'Latitude: ' + weather.latitude"></Label>
+        <Label [text]="'Longitude: ' + weather.longitude"></Label>
+        <Label [text]="weather.currently.summary" textWrap="true"></Label>
+    </StackLayout>
+</ScrollView>

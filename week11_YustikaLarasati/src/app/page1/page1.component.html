@@ -1,0 +1,11 @@
+<ActionBar title="Country" class="action-bar">
+</ActionBar>
+
+<GridLayout class="page">
+    <ListView [items]="countries" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/page2', item.CountryName]" [text]="item.CountryName"
+                class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+</GridLayout>
